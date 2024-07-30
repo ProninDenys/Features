@@ -5,17 +5,20 @@ function greet() {
     console.log("Hello, world!");
 }
 
-const greet = function() {
+const greetAgain = function() {
     console.log("Hello, world!");
 };
 
+// Примеры вызова функций
+greet();
+greetAgain();
 
 // 2 TASK
 function countArguments() {
     console.log(arguments.length);
 }
 
-// 
+// Примеры вызова функции
 countArguments(); // 0
 countArguments(1); // 1
 
@@ -48,7 +51,7 @@ function factorial(n) {
 console.log(factorial(5)); // 120
 console.log(factorial(0)); // 1
 console.log(factorial(7)); // 5040
-console.log(factorial(-3)); // Invalid.
+console.log(factorial(-3)); // Invalid input: n must be a non-negative integer.
 
 // 5 TASK
 function combineDigits(digit1, digit2, digit3) {
@@ -62,19 +65,14 @@ function combineDigits(digit1, digit2, digit3) {
 console.log(combineDigits(1, 4, 9)); // 149
 console.log(combineDigits(2, 5, 3)); // 253
 
-
 // 6 TASK 
 function calculateArea(length, width) {
-   
     if (width === undefined) {
-        
         return length * length;
     } else {
-       
         return length * width;
     }
 }
 
 console.log(calculateArea(5)); // Вывод: 25 (площадь квадрата)
 console.log(calculateArea(5, 3)); // Вывод: 15 (площадь прямоугольника)
-
